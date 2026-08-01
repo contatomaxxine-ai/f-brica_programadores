@@ -3,16 +3,8 @@
 
 
 try:
-   temperatura = float(input('digite a temperatura em Celsius:'))
-
-   if temperatura >=30:
-       print('está quente!')
-   elif temperatura >= 20:
-       print('está agradável!')
-   elif temperatura >=10:
-       print('está frio!')
-   else:
-       print('está muito frio!')
-
+   celsius = float(input('digite a temperatura:'))
+   fahrenheit = (celsius * (9/5)) + 32
+   print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}°F")
 except:
     print('Somente permitido números.')
